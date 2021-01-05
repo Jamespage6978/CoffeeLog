@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>939</width>
+    <height>682</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="1">
+       <widget class="QComboBox" name="MethodBox">
+        <item>
+         <property name="text">
+          <string>V60</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AeroPress</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Espresso</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>French Press</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mellita</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Chemex</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moka Pot</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLineEdit" name="ExtractEdit"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="GrindEdit"/>
+      </item>
+      <item row="4" column="2" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_15">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Extraction 
+Time</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="QualLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Quality</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="5">
+       <widget class="QSlider" name="FinishQualSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="4">
+       <widget class="QTextEdit" name="BodyEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="SweetLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Sweetness</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QSlider" name="AcidQuantSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QSlider" name="AromaQualSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="4">
+       <widget class="QSlider" name="BodyQuantSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QSlider" name="AromaQuantSlide">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="singleStep">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="invertedAppearance">
+         <bool>false</bool>
+        </property>
+        <property name="invertedControls">
+         <bool>false</bool>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="AromaLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Aroma</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0" rowspan="3" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="OveralLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Overall/
+OtherNotes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="3">
+       <widget class="QTextEdit" name="SweetEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1" rowspan="3" colspan="4">
+       <widget class="QTextEdit" name="OverallEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QTextEdit" name="AcidEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="QuantLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Quantity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="NotesLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Notes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QSlider" name="SweetQualSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QTextEdit" name="AromaEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>10000000</width>
+          <height>900</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="4" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="BodyLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Body</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="AcidLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Acidity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QSlider" name="AcidQualSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="5">
+       <widget class="QTextEdit" name="FinishEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_13">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Grind 
+Setting</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QSlider" name="SweetQuantSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="4">
+       <widget class="QSlider" name="BodyQualSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="5" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="FinishLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Finish</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="5">
+       <widget class="QSlider" name="FinishQuantSlide">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_17">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Method</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1" colspan="5">
+       <widget class="QTextEdit" name="FlavoutEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="FlavourLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Flavour</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="6">
+       <widget class="Line" name="line_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="5">
+       <widget class="QSpinBox" name="ScoreBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="5">
+       <widget class="QPushButton" name="SaveButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="5">
+       <widget class="QPushButton" name="HistoryButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>History</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_16">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ratio</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLineEdit" name="RatioEdit"/>
+      </item>
+      <item row="4" column="4" colspan="2" alignment="Qt::AlignHCenter">
+       <widget class="QCheckBox" name="AdvView">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Advanced View</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QDateEdit" name="BrewDateEdit">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="BrewDateLabel">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Brew Date</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_8">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Coffee</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="NameEdit"/>
+      </item>
+      <item row="2" column="2" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_9">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Roaster</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLineEdit" name="RoastEdit"/>
+      </item>
+      <item row="2" column="4" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_14">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Roast Date</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QDateEdit" name="RoastDate">
+        <property name="font">
+         <font>
+          <family>OCR A Std</family>
+         </font>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>939</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
